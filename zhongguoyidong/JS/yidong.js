@@ -1,19 +1,3 @@
-// 下拉
-{
-    let aa = document.querySelectorAll(".toubu5-2");
-    let bb = document.querySelectorAll(".tuBOX");
-    aa.forEach(function (val, index) {
-        val.onmousemove = function () {
-            for (let i = 0; i < aa.length; i++) {
-                bb[i].style.display = "none";
-            }
-            bb[index].style.display = "block";
-        };
-        val.onmouseout = function () {
-            bb[index].style.display = "none";
-        }
-    })
-}
 // 自动轮播
 {
     let lunbo = document.querySelector(".xbox");
@@ -47,12 +31,19 @@
             lunbo.style.marginLeft = "-2400px";
         }
     });
-    window.onblur = Bbox.onmousemove = function () {
+
+    Bbox.onmousemove = window.onblur = function () {
         clearInterval(yidong);
     };
-    window.onfocus = Bbox.onmouseout = function () {
+    window.addEventListener("onblur", function () {
+        clearInterval(yidong);
+    });
+    Bbox.onmouseout = window.onfocus = function () {
         yidong = setInterval(lunboFn, 3000);
     };
+    window.addEventListener("onfocus", function () {
+        yidong = setInterval(lunboFn, 3000);
+    });
     let flag = true;
     prov.onclick = function () {
         yd = "l";
@@ -77,6 +68,7 @@
     let z = 10;
     let flag = true;
     let st = setInterval(lunbo, 3000);
+
     function lunbo(yd ="r") {
         if (yd === "l") {
             imgs[now].classList.add("rightout");//显示的当前图片
@@ -135,7 +127,7 @@
     left.onclick = function () {
         if (flag) {
             flag = false;
-            lunbo(yd="l");
+            lunbo(yd = "l");
         }
     };
     right.onclick = function () {
@@ -148,13 +140,53 @@
     tops.onmouseover = window.onblur = function () {
         clearInterval(st);
     };
-    window.addEventListener("onblur",function () {
+    window.addEventListener("onblur", function () {
         clearInterval(st);
     });
     tops.onmouseout = window.onfocus = function () {
-            st = setInterval(lunbo, 3000);
+        st = setInterval(lunbo, 3000);
     };
-    window.addEventListener("onfocus",function () {
-            st = setInterval(lunbo, 3000);
+    window.addEventListener("onfocus", function () {
+        st = setInterval(lunbo, 3000);
     });
+}
+//公告
+{
+    let uldiv = document.querySelector("#gonggao ul");
+    let gonggao = document.querySelector("#gongao");
+    let ggz = document.querySelector(".fangxiang .ggz");
+    let ggy = document.querySelector(".fangxiang .ggy");
+    let num = 1;
+    let gg = setInterval(ggFn, 3000);
+    let yd = "r";
+
+    function ggFn() {
+        if (yd === "r") {
+            num++;
+            if (num === 5) {
+                num = 1;
+                uldiv.style.marginLeft = "-450px";
+            }
+        } else if (yd === "l") {
+            num--;
+            if (num === 0) {
+                num = 4;
+                uldiv.style.marginLeft = "-1800px";
+            }
+        }
+        uldiv.style.marginLeft = -450 * num + "px";
+    }
+
+    ggz.onclick = function () {
+            ggFn(yd = "l");
+    };
+    ggy.onclick = function () {
+            ggFn(yd = "r");
+    };
+    gonggao.onmousemove = function () {
+        clearInterval(gg);
+    };
+    gonggao.onmouseout = function () {
+        gg = setInterval(ggFn, 2000);
+    };
 }

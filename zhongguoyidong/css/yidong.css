@@ -14,12 +14,12 @@
 }
 
 @font-face {
-    font-family: 'iconfont';  /* project id 401517 */
-    src: url('http://at.alicdn.com/t/font_401517_o7wkvhi6z6758kt9.eot');
-    src: url('http://at.alicdn.com/t/font_401517_o7wkvhi6z6758kt9.eot?#iefix') format('embedded-opentype'),
-    url('http://at.alicdn.com/t/font_401517_o7wkvhi6z6758kt9.woff') format('woff'),
-    url('http://at.alicdn.com/t/font_401517_o7wkvhi6z6758kt9.ttf') format('truetype'),
-    url('http://at.alicdn.com/t/font_401517_o7wkvhi6z6758kt9.svg#iconfont') format('svg');
+    font-family: 'iconfont';  /* project id 449625 */
+    src: url('https://at.alicdn.com/t/font_449625_344o0bks0tem6lxr.eot');
+    src: url('https://at.alicdn.com/t/font_449625_344o0bks0tem6lxr.eot?#iefix') format('embedded-opentype'),
+    url('https://at.alicdn.com/t/font_449625_344o0bks0tem6lxr.woff') format('woff'),
+    url('https://at.alicdn.com/t/font_449625_344o0bks0tem6lxr.ttf') format('truetype'),
+    url('https://at.alicdn.com/t/font_449625_344o0bks0tem6lxr.svg#iconfont') format('svg');
 }
 
 .toubu {
@@ -48,6 +48,7 @@
 
 .toubu1-1 a {
     font-size: 14px;
+    color: #8b8b8b;
 }
 
 .toubu1-2 {
@@ -62,6 +63,9 @@
 .toubu1-2 a {
     font-size: 14px;
     color: #8b8b8b;
+}
+.toubu1-8 a:hover{
+    color: #337ab7;
 }
 
 .toubu1-3 {
@@ -138,7 +142,7 @@
 
 .toubu1-7 a {
     font-size: 14px;
-    color: #8b8b8b;
+    color: #e40077;
 }
 
 .toubu2 {
@@ -184,37 +188,36 @@
     /* background-color: red; */
     float: left;
     margin-top: 20px;
-    border-top: 1px #d0d0d0 solid;
-    border-bottom: 1px #d0d0d0 solid;
-    border-left: 1px #d0d0d0 solid;
-    border-right: 1px #d0d0d0 solid;
+    border: 1px #d0d0d0 solid;
 }
 
 .neikuang {
-    width: 443px;
+    width: 440px;
     height: 34px;
     float: left;
     font-size: 16px;
 }
 
 .toubu3-1 {
-    width: 85px;
-    height: 36px;
-    background-color: blue;
+    width: 88px;
+    height: 35px;
+    background-color: #25b2fe;
+    margin-top: -1px;
     float: right;
     color: #fff;
 }
 
 .toubu3-1 h1 {
-    font-size: 20px;
+    font-size: 14px;
     float: left;
-    line-height: 36px;
+    line-height: 34px;
 }
 
 .iconfont1 {
-    font-size: 25px;
+    font-size: 16px;
     float: left;
-    margin-top: 6px;
+    margin-top: 8px;
+    margin-left: 20px;
 }
 
 .toubu4 {
@@ -234,6 +237,7 @@
 
 .toubu4-1 a {
     font-size: 12px;
+    color: #666;
 }
 
 .toubu5 {
@@ -269,6 +273,9 @@
     float: left;
     text-align: center;
 }
+.toubu5-2:hover  .tuBOX{
+    display: block;
+}
 
 .toubu5-2 a {
     font-size: 20px;
@@ -295,7 +302,9 @@
     display: none;
     position: absolute;
     top: 40px;
+    left: 0;
     z-index: 999;
+
 }
 
 .tuBOX li {
@@ -307,6 +316,10 @@
     font-size: 16px;
     text-align: center;
     line-height: 40px;
+    cursor: pointer;
+}
+.tuBOX li:hover{
+    color: #0085d0;
 }
 
 #liebiao a {
@@ -845,6 +858,7 @@
 .neirong2-1 h1 {
     /* width: 50px; */
     height: 48px;
+    color: #0085d0;
     /* background-color: red; */
     font-size: 16px;
     line-height: 48px;
@@ -856,6 +870,7 @@
     width: 80px;
     height: 48px;
     /* background-color: red; */
+    color: #000;
     font-size: 16px;
     line-height: 48px;
     float: right;
@@ -866,7 +881,9 @@
     height: 360px;
     /* background-color: red; */
     float: left;
-
+}
+.neirong3-7{
+    border-bottom: 1px #d0d0d0 solid;
 }
 
 .neirong3-1 {
@@ -877,10 +894,14 @@
     border-right: 1px #d0d0d0 solid;
     border-bottom: 1px #d0d0d0 solid;
 }
+.neirong3-6{
+    border-left: 1px #d0d0d0 solid;
+}
 
 .neirong3-2 {
     width: 289px;
     height: 30px;
+    padding-top: 5px;
     /* background-color: #fff; */
     float: right;
     font-size: 18px;
@@ -908,6 +929,9 @@
     /* background-color: black; */
     margin-top: 8px;
     transition: .5s all ease;
+}
+.neirong3-5{
+    background: #efefef;
 }
 
 .neirong3-4:hover {
@@ -938,6 +962,7 @@
 .neirong4-1 h1 {
     width: 50px;
     height: 48px;
+    color: #0085d0;
     /* background-color: red; */
     font-size: 16px;
     line-height: 48px;
@@ -948,6 +973,7 @@
     display: block;
     width: 80px;
     height: 48px;
+    color: #000;
     /* background-color: red; */
     font-size: 16px;
     line-height: 48px;
@@ -973,6 +999,7 @@
 .neirong4-2 h2 {
     width: 289px;
     height: 20px;
+    color: rgb(0, 133, 208);
     /* background-color: yellow; */
     float: right;
     font-size: 16px;
@@ -982,6 +1009,7 @@
 .neirong4-2 h3 {
     width: 289px;
     height: 38px;
+    color: rgb(239, 51, 162);
     /* background-color: yellow; */
     float: right;
     font-size: 20px;
@@ -1017,7 +1045,7 @@
     margin-top: 10px;
     border: 1px #ccc solid;
     padding: 0 15px;
-
+    overflow: hidden;
 }
 
 .gg-left {
@@ -1035,27 +1063,36 @@
     font-family: '苹方';
     line-height: 38px;
 }
-
-.gg-zhong {
-    font-size: 14px;
-    color: #999;
-    font-family: '苹方';
-    line-height: 42px;
+#ulbox{
+    width: 900px;
+    float: left;
+    margin: 0 auto;
+    overflow: hidden;
 }
-
-.gg-zhong a {
-    font-size: 14px;
+#gonggao ul{
+    width: 3600px;
+    margin-left: -450px;
+}
+#gonggao ul li{
+    width: 450px;
+    line-height: 38px;
+    float: left;
+    padding: 0 10px 0 20px;
+}
+#gonggao ul li a{
     color: #0085d0;
-    font-family: '苹方';
-    line-height: 42px;
+    width: 310px;
+    float: left;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
-
-.gg-zhong1 {
-    margin-left: 140px;
-}
-
-.gg-zhong2 {
-    margin-left: 30px;
+#gonggao ul li span{
+    color: #CCC;
+    float: left;
+    background: none;
+    padding: 0 0 0 5px;
+    width: 110px;
 }
 
 .fangxiang {
